@@ -17,16 +17,6 @@ The platform provides a shopping experience where customers can browse products,
 
 The application uses AWS services for hosting, database management, image storage, order processing, notifications and infrastructure scalability.
 
-## 🖥️ Application Preview
-
-| Customer Homepage | Shopping Cart |
-|:---:|:---:|
-| ![Homepage](screenshots/homepage.jpeg) | ![Shopping Cart](screenshots/shopping_cart.png) |
-
-| Admin Dashboard | AWS EC2 Deployment |
-|:---:|:---:|
-| ![Admin Dashboard](screenshots/admin_dashboard.png) | ![EC2 Instance](screenshots/ec2_instance.png) |
-
 ## ☁️ Cloud Architecture & AWS Services
 
 CloudCart uses multiple AWS services to support different parts of the application.
