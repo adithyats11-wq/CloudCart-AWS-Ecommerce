@@ -1,7 +1,7 @@
 # 🛒 CloudCart
 ### Cloud-Based E-Commerce Platform | Built with Amazon Web Services
 
-A cloud based e-commerce application featuring product management, shopping cart functionality, order processing and an administrative dashboard, powered by AWS infrastructure.
+CloudCart is a cloud-based e-commerce application that allows customers to browse products, add items to a cart and place orders. It also includes an admin dashboard for managing products.
 
 <p align="center">
   <img src="screenshots/cloudcart_architecture.png" alt="CloudCart AWS Architecture" width="850">
@@ -11,119 +11,84 @@ A cloud based e-commerce application featuring product management, shopping cart
 
 ## 📌 About the Project
 
-**CloudCart** is a cloud-based e-commerce platform developed to demonstrate the integration of application development with Amazon Web Services.
+CloudCart is an e-commerce project developed using Amazon Web Services (AWS).
 
-The platform provides a shopping experience where customers can browse products, manage their shopping carts and place orders. It also includes an administrative dashboard for managing product information and images.
+Customers can browse products, manage their shopping cart and place orders. The admin dashboard allows administrators to add, update and delete products.
 
-The application uses AWS services for hosting, database management, image storage, order processing, notifications and infrastructure scalability.
+AWS services are used to host the application, store data and images, process orders and send notifications.
 
-## ☁️ Cloud Architecture & AWS Services
+## ☁️ AWS Services Used
 
-CloudCart uses multiple AWS services to support different parts of the application.
-
-| AWS Service | Implementation |
+| AWS Service | Purpose |
 |:---|:---|
-| **Amazon EC2** | Hosts the frontend and Flask backend |
+| **Amazon EC2** | Hosts the application |
 | **Amazon S3** | Stores product images |
-| **Amazon RDS (MySQL)** | Stores product and order information |
-| **AWS Lambda** | Handles order processing |
-| **Amazon SNS** | Delivers order notifications |
-| **Amazon SES** | Sends customer confirmation emails |
-| **AWS IAM** | Controls access and service permissions |
-| **Application Load Balancer** | Distributes incoming application traffic |
-| **EC2 Auto Scaling** | Adjusts EC2 instance capacity based on demand |
+| **Amazon RDS (MySQL)** | Stores product and order details |
+| **AWS Lambda** | Processes orders |
+| **Amazon SNS** | Sends order notifications |
+| **Amazon SES** | Sends confirmation emails |
+| **AWS IAM** | Manages permissions |
+| **Application Load Balancer** | Distributes incoming traffic |
+| **EC2 Auto Scaling** | Adjusts the number of EC2 instances |
 
 ## ⚙️ Technology Stack
 
-**Frontend**
-- HTML5
-- CSS3
-- JavaScript
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Python, Flask
+- **Database:** MySQL
+- **Web Server:** Nginx and Gunicorn
+- **Cloud Platform:** Amazon Web Services (AWS)
 
-**Backend**
-- Python
-- Flask
-- Gunicorn
+## ✨ Key Features
 
-**Database**
-- MySQL
-- Amazon RDS
-
-**Cloud & Infrastructure**
-- Amazon Web Services
-- EC2
-- S3
-- Lambda
-- SNS
-- SES
-- IAM
-- Application Load Balancer
-- EC2 Auto Scaling
-
-**Web Server**
-- Nginx
-
-## ✨ Core Features
-
-- Product catalogue with product details and pricing.
-- Shopping cart and checkout functionality.
-- Order placement and order management.
-- Administrative login and dashboard.
+- View available products and prices.
+- Add products to the shopping cart.
+- Place orders.
+- Admin login and dashboard.
 - Add, update and delete products.
-- Product image uploads to Amazon S3.
-- Persistent product and order storage using Amazon RDS.
-- Automated order processing through AWS Lambda.
-- Order notifications through Amazon SNS.
-- Customer confirmation emails through Amazon SES.
-- Load balancing and EC2 Auto Scaling.
+- Upload product images to Amazon S3.
+- Store product and order details in Amazon RDS.
+- Process orders using AWS Lambda.
+- Send notifications using SNS and SES.
+- Manage application traffic using Load Balancer and Auto Scaling.
 
 ## 🔄 Application Workflow
 
-1. Customers access the CloudCart website.
-2. The Application Load Balancer distributes incoming requests to EC2 instances.
-3. Nginx forwards application requests to the Flask backend running through Gunicorn.
-4. Product information is retrieved from Amazon RDS.
-5. Product images are stored and accessed through Amazon S3.
-6. When an order is placed, the backend invokes AWS Lambda for order processing.
-7. Amazon SNS sends order notifications.
-8. Amazon SES handles customer confirmation emails.
+1. Customers open the CloudCart website.
+2. The Load Balancer distributes incoming requests to EC2 instances.
+3. EC2 hosts the application and runs the Flask backend.
+4. Product details are stored in Amazon RDS.
+5. Product images are stored in Amazon S3.
+6. When a customer places an order, AWS Lambda processes it.
+7. SNS sends order notifications.
+8. SES sends customer confirmation emails.
 
-## 🏗️ Deployment & Infrastructure
+## 🏗️ Deployment
 
-The application is deployed on AWS using the following infrastructure:
+- Deployed the application on Amazon EC2.
+- Used Nginx and Gunicorn to run the application.
+- Connected the application to Amazon RDS.
+- Configured Amazon S3 for image storage.
+- Set up an Application Load Balancer.
+- Configured EC2 Auto Scaling.
 
-- EC2 instances for application hosting.
-- Nginx as a reverse proxy.
-- Gunicorn as the Flask application server.
-- Application Load Balancer for incoming traffic distribution.
-- EC2 Auto Scaling for capacity management.
-- Amazon RDS for database connectivity.
-- IAM roles for AWS service permissions.
-
-## 🔐 Security & Access Management
-
-- IAM roles and permissions for AWS resource access.
-- Private Amazon RDS database deployment.
-- Environment variables for sensitive application configuration.
-- Restricted administrative access.
-- Security groups for controlling network traffic.
 
 ## 🚀 Future Improvements
 
-- Customer registration and authentication.
-- Online payment gateway integration.
+- Customer registration and login.
+- Online payment integration.
 - Order history and tracking.
 - Product search and filtering.
-- Enhanced monitoring and logging.
+- Improved monitoring.
 
 ## 🎯 Project Objectives
 
-- Gain practical experience with AWS cloud services.
-- Understand cloud-hosted application architecture.
-- Integrate a Python backend with managed AWS services.
-- Implement serverless order processing.
-- Explore load balancing and automatic scaling.
-- Understand cloud security and IAM permissions.
+- Learn how to use AWS services in a real project.
+- Understand cloud-based application deployment.
+- Connect a Python application with AWS services.
+- Learn serverless order processing.
+- Understand Load Balancing and Auto Scaling.
+- Gain practical experience with cloud security.
 
 ## 👨‍💻 Author
 
