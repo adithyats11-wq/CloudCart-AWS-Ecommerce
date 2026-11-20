@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CloudCart | Smart Online Shopping</title>
+  <meta name="description" content="Discover everyday essentials with CloudCart.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="announcement">
+    Your everyday favorites, all in one place ✨
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-icon">☁</span>
+      <span>Cloud<span class="brand-accent">Cart</span></span>
+    </a>
+
+    <div class="search-wrap">
+      <span aria-hidden="true">⌕</span>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search your favorite products..."
+        aria-label="Search products"
+      >
+    </div>
+
+    <button class="cart-button" type="button" onclick="showCart()">
+      <span aria-hidden="true">🛒</span>
+      <span>My Cart</span>
+      <span class="cart-count" id="count">0</span>
+    </button>
+  </header>
+
+  <nav class="category-nav" aria-label="Store categories">
+    <a href="#products">All Products</a>
+    <a href="#products">Electronics</a>
+    <a href="#products">Fashion & Accessories</a>
+    <a href="#products">Beauty & Personal Care</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">WELCOME TO CLOUDCART</span>
+
+        <h1>Good finds.<br>Great <span>everyday.</span></h1>
+
+        <p>
+          Discover the little things that make life better.
+          Shop your favorites in one simple place.
+        </p>
+
+        <a class="hero-button" href="#products">
+          Explore the collection <span aria-hidden="true">→</span>
+        </a>
+
+        <div class="hero-note">
+          <span>✓</span> Easy shopping
+          <span>✓</span> Demo checkout
+          <span>✓</span> Cloud-powered
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-circle"></div>
+        <div class="art-card art-card-top">
+          <span>🎧</span>
+          <div><strong>Tech essentials</strong><small>Made for your day</small></div>
+        </div>
+        <div class="art-card art-card-middle">
+          <span>⌚</span>
+          <div><strong>Everyday style</strong><small>Find your favorites</small></div>
+        </div>
+        <div class="art-card art-card-bottom">
+          <span>✨</span>
+          <div><strong>Little upgrades</strong><small>Big everyday joy</small></div>
+        </div>
+        <div class="art-sparkle">✳</div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Store highlights">
+      <div><span>✦</span><p><strong>Curated finds</strong><small>Everyday essentials</small></p></div>
+      <div><span>♡</span><p><strong>Simple shopping</strong><small>Browse and add to cart</small></p></div>
+      <div><span>☁</span><p><strong>Cloud-powered</strong><small>Built with AWS services</small></p></div>
+    </section>
+
+    <section class="shop-section" id="products">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE CLOUDCART COLLECTION</span>
+          <h2>Find your favorites<span>.</span></h2>
+          <p>Useful things. Lovely finds. All in one place.</p>
+        </div>
+        <span class="collection-label">YOUR DAILY DISCOVERIES</span>
+      </div>
+
+      <div id="product-list" class="product-categories">
+        <p>Loading products...</p>
+      </div>
+    </section>
+
+    <section class="cart-section" id="cart-section">
+      <div class="cart-heading">
+        <span class="eyebrow">READY WHEN YOU ARE</span>
+        <h2>Your shopping bag<span>.</span></h2>
+        <p>Review your selected products below.</p>
+      </div>
+
+      <div class="cart-panel">
+        <div id="cart-items">
+          <p>Your cart is empty.</p>
+        </div>
+
+        <div class="cart-total">
+          <span>Order total</span>
+          <strong>₹<span id="total">0</span></strong>
+        </div>
+
+        <label for="customer-email">Email address for order confirmation</label>
+<input
+  type="email"
+  id="customer-email"
+  name="customer-email"
+  placeholder="you@example.com"
+  autocomplete="email"
+  required
+  style="width: 100%; padding: 12px; margin: 10px 0 16px; box-sizing: border-box;"
+>
+
+        <button class="checkout-button" type="button" onclick="checkout()">
+          Place Demo Order <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="demo-note">
+          Demo checkout only. No payment will be taken.
+        </p>
+
+        <p id="message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#">
+      <span class="brand-icon">☁</span>
+      <span>Cloud<span class="brand-accent">Cart</span></span>
+    </a>
+
+    <p>A little more joy in your everyday shopping.</p>
+    <span class="footer-tag">AWS E-COMMERCE PROJECT · DEMO STORE</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+# Environment files and secrets
+.env
+.env.*
+*.env
+admin.env
+cloudcart.env
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.pyc
+
+# Database files
+*.db
+*.sqlite3
+
+# AWS credentials and SSH keys
+*.pem
+.aws/
+
+# Backup files
+*.backup
+*.bak
+
+# Python generated files
+.pytest_cache/
+*.log
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
